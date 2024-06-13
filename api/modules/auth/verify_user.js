@@ -111,10 +111,10 @@ async function verifySignature(address, nonce, signature) {
  * @param {string} userID - User ID to add the role
  */
 async function addRole(userID) {
-    const guildId = '1190905181274120272'; // Replace with your guild ID
+    const guildId = process.env.GUILDID; // Replace with your guild ID
     const userId = userID; // Replace with the user ID
-    const roleId = '1210745597292716072'; // Replace with the role ID
-    const token = 'MTE5MTAxMjg5MjcwMzcyMzY2Mg.G0eV8W.D7rhpOK3S82xHyPM-Y26jCWz0EM5ur7NrPZeSs'; // Replace with your Discord bot token
+    const roleId = process.env.ROLEID; // Replace with the role ID
+    const token = process.env.TOKEN; // Replace with your Discord bot token
 
     try {
         // Fetch the current roles of the user
