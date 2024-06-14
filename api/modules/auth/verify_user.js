@@ -5,7 +5,7 @@ const bio_abi = require('./bio_abi.json');
 const axios = require('axios');
 
 // Initialize Web3 with your preferred provider (e.g., Infura, local node)
-const web3 = new Web3('https://mainnet.infura.io/v3/fb43b5a5ec81406c90cbbeb12cda191a');
+const web3 = new Web3(/* YOUR INFURA KEY */);
 
 // Contract address and ABI for BIOP token
 const BIOP_ADDRESS = '0x0d2ADB4Af57cdac02d553e7601456739857D2eF4';
